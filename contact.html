@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Porch & Pine Properties</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">&#127795;</span>
+        <span class="logo-text">Porch <span class="amp">&</span> Pine</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="listings.html">Available Rentals</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="index.html#portals" class="nav-portal-link">Tenant / Owner Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <h1>Contact Us</h1>
+      <p>We'd love to hear from you</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="section contact-section">
+    <div class="container contact-inner">
+
+      <!-- FORM -->
+      <div class="contact-form-wrap">
+        <h2>Send Us a Message</h2>
+        <p>Fill out the form and we'll get back to you within 1 business day.</p>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name *</label>
+              <input type="text" id="firstName" name="firstName" placeholder="Jane" required />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name *</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Smith" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="jane@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="(000) 000-0000" />
+          </div>
+          <div class="form-group">
+            <label for="subject">I am a...</label>
+            <select id="subject" name="subject">
+              <option value="prospective-tenant">Prospective Tenant</option>
+              <option value="current-tenant">Current Tenant</option>
+              <option value="property-owner">Property Owner</option>
+              <option value="general">General Inquiry</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us how we can help..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          <p class="form-note">* Required fields</p>
+        </form>
+        <div class="form-success hidden" id="formSuccess">
+          <div class="success-icon">&#10003;</div>
+          <h3>Message Sent!</h3>
+          <p>Thanks for reaching out. We'll get back to you within 1 business day.</p>
+        </div>
+      </div>
+
+      <!-- CONTACT INFO -->
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <div class="contact-info-items">
+          <div class="contact-info-item">
+            <div class="contact-info-icon">&#128222;</div>
+            <div>
+              <h4>Phone</h4>
+              <p>(000) 000-0000</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">&#128231;</div>
+            <div>
+              <h4>Email</h4>
+              <p>hello@porchandpine.com</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">&#128336;</div>
+            <div>
+              <h4>Office Hours</h4>
+              <p>Monday – Friday: 9am – 5pm</p>
+              <p>Saturday: By appointment</p>
+              <p>Sunday: Closed</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">&#128205;</div>
+            <div>
+              <h4>Service Area</h4>
+              <p>Washington &amp; Idaho</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Portal Quick Links -->
+        <div class="contact-portals">
+          <h3>Existing Tenant or Owner?</h3>
+          <p>Log in to your portal for payments, statements, and maintenance requests.</p>
+          <a href="https://www.rentecdirect.com" target="_blank" rel="noopener" class="btn btn-outline">Tenant Login</a>
+          <a href="https://www.rentecdirect.com" target="_blank" rel="noopener" class="btn btn-outline">Owner Login</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">&#127795;</span>
+        <span class="logo-text">Porch <span class="amp">&</span> Pine Properties</span>
+        <p>Thoughtful property management across Washington &amp; Idaho.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="listings.html">Available Rentals</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p>&#128222; (000) 000-0000</p>
+        <p>&#128231; hello@porchandpine.com</p>
+        <p>&#128205; Washington &amp; Idaho</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Porch &amp; Pine Properties. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/listings-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

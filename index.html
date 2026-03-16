@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Porch & Pine Properties | Property Management</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">&#127795;</span>
+        <span class="logo-text">Porch <span class="amp">&</span> Pine</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="listings.html">Available Rentals</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#portals" class="nav-portal-link">Tenant / Owner Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Property Management in the Pacific Northwest</p>
+      <h1>Where Every Porch Feels Like Home</h1>
+      <p class="hero-sub">Thoughtful property management for tenants and owners across Washington &amp; Idaho.</p>
+      <div class="hero-buttons">
+        <a href="listings.html" class="btn btn-primary">View Available Rentals</a>
+        <a href="contact.html" class="btn btn-outline">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section services">
+    <div class="container">
+      <h2 class="section-title">What We Do</h2>
+      <p class="section-sub">Full-service property management so owners can relax and tenants feel at home.</p>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">&#127968;</div>
+          <h3>Residential Rentals</h3>
+          <p>Long-term rentals managed with care — from application to move-out. We handle it all.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">&#127958;</div>
+          <h3>Short-Term Rentals</h3>
+          <p>Vacation and short-term properties managed to maximize your return and guest experience.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">&#128101;</div>
+          <h3>Owner Services</h3>
+          <p>Detailed owner reporting, trust accounting, and transparent communication every step of the way.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">&#128295;</div>
+          <h3>Maintenance &amp; Repairs</h3>
+          <p>Responsive maintenance coordination with trusted local vendors to protect your investment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED LISTINGS PREVIEW -->
+  <section class="section listings-preview">
+    <div class="container">
+      <h2 class="section-title">Available Rentals</h2>
+      <p class="section-sub">Find your perfect home in Washington &amp; Idaho.</p>
+      <div class="listings-preview-grid" id="featuredListings">
+        <!-- Populated by JS -->
+      </div>
+      <div class="listings-actions">
+        <a href="listings.html" class="btn btn-primary">View All Listings</a>
+        <a href="https://www.zillow.com" target="_blank" rel="noopener" class="btn btn-zillow">
+          &#128269; Also Find Us on Zillow
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="section why-us">
+    <div class="container why-us-inner">
+      <div class="why-us-text">
+        <h2>Local Experts. Personal Service.</h2>
+        <p>We're not a big corporate management company. We're your neighbors — people who know the Pacific Northwest and care about the communities we manage in.</p>
+        <ul class="why-list">
+          <li>&#10003; Licensed and insured in Washington &amp; Idaho</li>
+          <li>&#10003; Trust accounting compliant with state regulations</li>
+          <li>&#10003; Fast response times for owners and tenants</li>
+          <li>&#10003; Transparent reporting with no surprises</li>
+          <li>&#10003; Local vendor network for quality repairs</li>
+        </ul>
+        <a href="about.html" class="btn btn-primary">Meet Our Team</a>
+      </div>
+      <div class="why-us-image">
+        <div class="image-placeholder">
+          <span>&#127968;</span>
+          <p>Photo of team / property</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTALS -->
+  <section class="section portals" id="portals">
+    <div class="container">
+      <h2 class="section-title">Access Your Portal</h2>
+      <p class="section-sub">Log in to pay rent, view statements, or check your owner reports.</p>
+      <div class="portals-grid">
+        <div class="portal-card">
+          <div class="portal-icon">&#128100;</div>
+          <h3>Tenant Portal</h3>
+          <p>Pay rent, submit maintenance requests, and view your lease documents.</p>
+          <a href="https://www.rentecdirect.com" target="_blank" rel="noopener" class="btn btn-primary">Tenant Login</a>
+        </div>
+        <div class="portal-card">
+          <div class="portal-icon">&#128188;</div>
+          <h3>Owner Portal</h3>
+          <p>View owner statements, income reports, and property performance.</p>
+          <a href="https://www.rentecdirect.com" target="_blank" rel="noopener" class="btn btn-primary">Owner Login</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">&#127795;</span>
+        <span class="logo-text">Porch <span class="amp">&</span> Pine Properties</span>
+        <p>Thoughtful property management across Washington &amp; Idaho.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="listings.html">Available Rentals</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p>&#128222; (000) 000-0000</p>
+        <p>&#128231; hello@porchandpine.com</p>
+        <p>&#128205; Washington &amp; Idaho</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Porch &amp; Pine Properties. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/listings-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
