@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Available Rentals | Porch & Pine Properties</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <svg class="logo-pine" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 2 L26 14 L22 13 L28 22 L23 21 L27 30 L9 30 L13 21 L8 22 L14 13 L10 14 Z" fill="#3D5C6E" opacity="0.85"/>
+          <rect x="16" y="30" width="4" height="4" fill="#3D5C6E" opacity="0.6"/>
+        </svg>
+        <div class="logo-text-wrap">
+          <span class="logo-main">Porch &amp; Pine</span>
+          <span class="logo-sub">Property Management</span>
+        </div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="listings.html" class="active">Available Rentals</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html#portals" class="nav-portal-link">Tenant / Owner Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <h1>Available Rentals</h1>
+      <p>Short-term &amp; vacation properties across Washington &amp; Idaho</p>
+    </div>
+  </section>
+
+  <div class="listings-filter-bar">
+    <div class="container">
+      <div class="filter-group">
+        <label for="filterType">Type</label>
+        <select id="filterType">
+          <option value="all">All Types</option>
+          <option value="short-term">Short-Term</option>
+          <option value="long-term">Long-Term</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="filterBeds">Bedrooms</label>
+        <select id="filterBeds">
+          <option value="all">Any</option>
+          <option value="1">1 Bed</option>
+          <option value="2">2 Beds</option>
+          <option value="3">3 Beds</option>
+          <option value="4">4+ Beds</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="filterState">State</label>
+        <select id="filterState">
+          <option value="all">WA &amp; ID</option>
+          <option value="WA">Washington</option>
+          <option value="ID">Idaho</option>
+        </select>
+      </div>
+      <button class="btn btn-outline" id="clearFilters">Clear Filters</button>
+    </div>
+  </div>
+
+  <section class="section listings-section">
+    <div class="container">
+      <p class="listings-count" id="listingsCount"></p>
+      <div class="listings-grid" id="listingsGrid"></div>
+      <div class="no-results hidden" id="noResults">
+        <p>No properties match your filters. <a href="#" id="resetLink">Clear filters</a> to see all listings.</p>
+      </div>
+      <div class="zillow-cta">
+        <p>Also find us on Zillow</p>
+        <a href="https://www.zillow.com" target="_blank" rel="noopener" class="btn btn-outline">View on Zillow</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="logo-text-wrap">
+          <span class="logo-main">Porch &amp; Pine</span>
+          <span class="logo-sub">Property Management</span>
+        </div>
+        <p>Thoughtful property management across Washington &amp; Idaho.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="listings.html">Available Rentals</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p>&#128222; (509) 216-4663</p>
+        <p>&#128231; hello@porchandpine.com</p>
+        <p>&#128205; Washington &amp; Idaho</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Porch &amp; Pine Properties. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/listings-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
