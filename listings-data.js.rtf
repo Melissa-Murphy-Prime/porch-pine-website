@@ -1,0 +1,165 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 // ============================================================\
+// PORCH & PINE PROPERTIES \'97 LISTINGS DATA\
+// ============================================================\
+\
+const LISTINGS = [\
+  \{\
+    id: 1,\
+    status: "available",\
+    type: "short-term",\
+    title: "Mid Century Modern On the Park \'97 Sleeps 10",\
+    address: "Spokane, WA",\
+    state: "WA",\
+    price: 299,\
+    priceLabel: "/night",\
+    beds: 5,\
+    baths: 4.5,\
+    sqft: null,\
+    image: null,\
+    description: "\uc0\u11088  Guest Favorite \'97 4.87 rating \'b7 46 reviews. A fully rebuilt mid-century modern masterpiece on Spokane's South Hill, steps from Manito Park and Cannon Hill Park. Chef's kitchen, gas fireplace, theater room, infrared sauna, hot tub, and a second full kitchen downstairs. Sleeps 10 across 5 bedrooms.",\
+    features: ["Hot Tub", "Infrared Sauna", "Theater Room", "Gas Fireplace", "Chef's Kitchen", "2nd Kitchen", "Sleeps 10", "Walk to Manito Park"],\
+    availableDate: "Check Calendar",\
+    airbnb: "https://www.airbnb.com/rooms/49885528",\
+    featured: true\
+  \},\
+  \{\
+    id: 2,\
+    status: "available",\
+    type: "short-term",\
+    title: "Lakefront Estate \'97 Lake Coeur d'Alene",\
+    address: "Coeur d'Alene, ID",\
+    state: "ID",\
+    price: 795,\
+    priceLabel: "/night",\
+    beds: 6,\
+    baths: 4,\
+    sqft: 8400,\
+    image: null,\
+    description: "A true entertainer's dream. This breathtaking 8,400 sq ft lakefront estate features 6 bedrooms, lake views from 5 of them, a private dock, brand new hot tub, elevator, Starlink internet, billiards room, full bar, and a guest annex with its own kitchen and laundry. Quick boat access to downtown CDA, Gozzer Ranch, and Beauty Bay.",\
+    features: ["Lakefront", "Private Dock", "Hot Tub", "Elevator", "4-Car Garage", "Billiards & Bar", "Guest Annex", "Starlink WiFi", "Pet Friendly"],\
+    availableDate: "Check Calendar",\
+    airbnb: "https://www.airbnb.com/rooms/1131879204849485257",\
+    featured: true\
+  \},\
+  \{\
+    id: 3,\
+    status: "available",\
+    type: "short-term",\
+    title: "Schweitzer Mountain 3BR Getaway",\
+    address: "Sandpoint, ID",\
+    state: "ID",\
+    price: 249,\
+    priceLabel: "/night",\
+    beds: 3,\
+    baths: 2.5,\
+    sqft: null,\
+    image: null,\
+    description: "\uc0\u11088  Guest Favorite \'97 5.0 rating \'b7 15 reviews. A centrally located 3-bedroom retreat at Schweitzer Mountain Resort \'97 one of North Idaho's top year-round destinations. Hit the slopes in winter or enjoy summer mountain adventures. King master, queen bedroom, twin bunks, and a queen sleeper sofa. Sleeps 9.",\
+    features: ["Ski Resort Access", "Sleeps 9", "3 Bedrooms", "Mountain Views", "Deck", "Full Kitchen", "Year-Round"],\
+    availableDate: "Check Calendar",\
+    airbnb: "https://www.airbnb.com/rooms/1483626636516216376",\
+    featured: true\
+  \},\
+  \{\
+    id: 4,\
+    status: "available",\
+    type: "short-term",\
+    title: "The River Penthouse \'97 Riverstone CDA",\
+    address: "Coeur d'Alene, ID",\
+    state: "ID",\
+    price: 189,\
+    priceLabel: "/night",\
+    beds: 1,\
+    baths: 1,\
+    sqft: null,\
+    image: null,\
+    description: "\uc0\u11088  Guest Favorite \'97 4.87 rating \'b7 15 reviews. Top-floor corner unit in Riverstone's premier building with panoramic Spokane River views. Walk to dining, boutiques, movies, and the Centennial Trail. Watch fireworks, Ironman, and holiday lights from your private perch. Fitness room and secure covered parking included.",\
+    features: ["Panoramic River Views", "Top Floor Corner Unit", "Walk to Dining", "Centennial Trail", "Fitness Room", "Covered Parking", "Sleeps 3"],\
+    availableDate: "Check Calendar",\
+    airbnb: "https://www.airbnb.com/rooms/1333447797391185127",\
+    featured: false\
+  \},\
+  \{\
+    id: 5,\
+    status: "available",\
+    type: "short-term",\
+    title: "Windy Bay Hideaway on Lake Coeur d'Alene",\
+    address: "Worley, ID",\
+    state: "ID",\
+    price: 349,\
+    priceLabel: "/night",\
+    beds: 3,\
+    baths: 2.5,\
+    sqft: null,\
+    image: null,\
+    description: "\uc0\u11088  Guest Favorite \'97 5.0 rating \'b7 5 reviews. A private lakeside retreat tucked along the serene shores of Coeur d'Alene Lake in coveted Windy Bay. Wake to loons on the water, sip coffee as the lake mirrors the sky, and end your day watching the sun melt into the lake from your private dock. Sleeps 6.",\
+    features: ["Lakefront", "Private Dock", "Boat & Jet Ski Access", "Lake Views", "Sleeps 6", "Modern Comfort", "Secluded"],\
+    availableDate: "Check Calendar",\
+    airbnb: "https://www.airbnb.com/rooms/1303774460266751846",\
+    featured: true\
+  \},\
+  \{\
+    id: 6,\
+    status: "available",\
+    type: "short-term",\
+    title: "Coeur d'Alene Lakefront Retreat",\
+    address: "Harrison, ID",\
+    state: "ID",\
+    price: 595,\
+    priceLabel: "/night",\
+    beds: 6,\
+    baths: 5,\
+    sqft: null,\
+    image: null,\
+    description: "An entire lakefront estate on Lake Coeur d'Alene sleeping up to 14 guests. Six bedrooms, 9 beds, 5 baths \'97 with a private dock, expansive outdoor entertaining space, and quick boat access to downtown CDA, Gozzer Ranch, and Beauty Bay. \uc0\u11088  4.74 \'b7 19 reviews.",\
+    features: ["Lakefront", "Private Dock", "Sleeps 14", "6 Bedrooms", "Outdoor Entertaining", "Boat Access"],\
+    availableDate: "Check Calendar",\
+    airbnb: "https://www.airbnb.com/rooms/1333447797391185127",\
+    featured: true\
+  \},\
+  \{\
+    id: 7,\
+    status: "available",\
+    type: "short-term",\
+    title: "Lake Pend Oreille Bay Escape",\
+    address: "Sagle, ID",\
+    state: "ID",\
+    price: 249,\
+    priceLabel: "/night",\
+    beds: 3,\
+    baths: 2,\
+    sqft: null,\
+    image: null,\
+    description: "\uc0\u11088  Guest Favorite \'97 5.0 rating. A stunning A-frame retreat on a private peninsula overlooking Lake Pend Oreille with panoramic Monarch Mountain views. Boat lift, Starlink internet, Tesla charging, smart TVs, and backup generator. 5 min to Garfield Bay, 30 min to Sandpoint, 40 min to Schweitzer.",\
+    features: ["Lakefront", "Boat Lift", "Panoramic Views", "Starlink WiFi", "Tesla Charger", "Oversized Deck", "Sleeps 9"],\
+    availableDate: "Check Calendar",\
+    airbnb: "https://www.airbnb.com/rooms/574540063400271776",\
+    featured: true\
+  \},\
+  \{\
+    id: 8,\
+    status: "available",\
+    type: "short-term",\
+    title: "Modern Downtown Cottage \'97 Minutes from Lake CDA",\
+    address: "Coeur d'Alene, ID",\
+    state: "ID",\
+    price: 199,\
+    priceLabel: "/night",\
+    beds: 3,\
+    baths: 2.5,\
+    sqft: null,\
+    image: null,\
+    description: "\uc0\u11088  5.0 rating \'b7 4 reviews. A newly remodeled, beautifully decorated freestanding townhome just 5 minutes from downtown Coeur d'Alene and walking distance to Lake CDA, the public beach, shops, and restaurants. Three spacious bedrooms, upstairs loft with sofa bed, full kitchen, and laundry. Sleeps 8.",\
+    features: ["Walk to Lake CDA", "Walk to Downtown", "Full Kitchen", "Washer/Dryer", "Upstairs Loft", "Sleeps 8", "2.5 Baths"],\
+    availableDate: "Check Calendar",\
+    airbnb: "https://www.airbnb.com/rooms/1419688187177557940",\
+    featured: true\
+  \}\
+];}
