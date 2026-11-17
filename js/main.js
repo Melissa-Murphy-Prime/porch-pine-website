@@ -253,7 +253,6 @@ if (listingsGrid) {
 
 // ---- CONTACT FORM ----
 const contactForm  = document.getElementById('contactForm');
-const formSuccess  = document.getElementById('formSuccess');
 
 const listingDetail = document.getElementById('listingDetail');
 if (listingDetail && typeof LISTINGS !== 'undefined') {
@@ -280,26 +279,24 @@ if (contactForm) {
   }
   const subject = params.get('subject');
   const subjectField = document.getElementById('subjectLine');
+  const emailSubject = document.getElementById('formSubject');
   if (subject && subjectField) subjectField.value = subject;
+  if (subject && emailSubject) emailSubject.value = subject;
 
-  bindLeadForm(contactForm, formSuccess);
+  bindLeadForm(contactForm);
 }
 
-function bindLeadForm(form, successEl) {
+function bindLeadForm(form) {
   form.addEventListener('submit', function(e) {
-    e.preventDefault();
     const required = form.querySelectorAll('[required]');
     let valid = true;
     required.forEach(field => {
       if (!String(field.value).trim()) { field.style.borderColor = '#c0392b'; valid = false; }
       else field.style.borderColor = '';
     });
-    if (!valid) return;
-    // Same behavior as the contact form: there is no backend, so this only confirms on the page.
-    form.classList.add('hidden');
-    if (successEl) successEl.classList.remove('hidden');
+    if (!valid) e.preventDefault();
   });
 }
 
 const ownerForm = document.getElementById('ownerForm');
-if (ownerForm) bindLeadForm(ownerForm, document.getElementById('ownerFormSuccess'));
+if (ownerForm) bindLeadForm(ownerForm);

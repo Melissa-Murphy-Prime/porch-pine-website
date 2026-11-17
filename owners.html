@@ -179,7 +179,12 @@
       <div class="contact-form-wrap">
         <h2>Tell us about your property</h2>
         <p>We use this to start the conversation. Required fields are marked.</p>
-        <form class="contact-form" id="ownerForm" novalidate>
+        <form class="contact-form" id="ownerForm" method="POST" action="https://formsubmit.co/melissa@propertybyprime.com" novalidate>
+          <input type="hidden" name="_subject" value="New owner lead – Porch &amp; Pine" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value="https://porchpineproperties.com/thank-you.html" />
+          <input type="text" name="_honey" style="display:none" />
           <div class="form-group">
             <label for="ownerName">Name *</label>
             <input type="text" id="ownerName" name="name" autocomplete="name" required />
@@ -196,12 +201,12 @@
           </div>
           <div class="form-group">
             <label for="propertyAddress">Property address *</label>
-            <input type="text" id="propertyAddress" name="propertyAddress" required />
+            <input type="text" id="propertyAddress" name="property address" required />
           </div>
           <div class="form-row">
             <div class="form-group">
               <label for="propertyType">Property type *</label>
-              <select id="propertyType" name="propertyType" required>
+              <select id="propertyType" name="property type" required>
                 <option value="">Select</option>
                 <option>Single-family home</option>
                 <option>Duplex</option>
@@ -211,12 +216,12 @@
             </div>
             <div class="form-group">
               <label for="bedsBaths">Beds / baths</label>
-              <input type="text" id="bedsBaths" name="bedsBaths" placeholder="3 bed, 2 bath" />
+              <input type="text" id="bedsBaths" name="beds / baths" placeholder="3 bed, 2 bath" />
             </div>
           </div>
           <div class="form-group">
             <label for="currentlyRented">Currently rented? *</label>
-            <select id="currentlyRented" name="currentlyRented" required>
+            <select id="currentlyRented" name="currently rented" required>
               <option value="">Select</option>
               <option>Yes</option>
               <option>No</option>
