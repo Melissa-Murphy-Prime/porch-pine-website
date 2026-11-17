@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /listings-data.js.rtf
+
+Sitemap: https://porchpineproperties.com/sitemap.xml
