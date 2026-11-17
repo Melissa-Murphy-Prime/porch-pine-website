@@ -4,25 +4,6 @@
 
 const LISTINGS = [
   {
-    id: 1,
-    status: "available",
-    type: "short-term",
-    title: "Mid Century Modern On the Park — Sleeps 10",
-    address: "Spokane, WA",
-    state: "WA",
-    price: 299,
-    priceLabel: "/night",
-    beds: 5,
-    baths: 4.5,
-    sqft: null,
-    image: null,
-    description: "⭐ Guest Favorite — 4.87 rating · 46 reviews. A fully rebuilt mid-century modern masterpiece on Spokane's South Hill, steps from Manito Park and Cannon Hill Park. Chef's kitchen, gas fireplace, theater room, infrared sauna, hot tub, and a second full kitchen downstairs. Sleeps 10 across 5 bedrooms.",
-    features: ["Hot Tub", "Infrared Sauna", "Theater Room", "Gas Fireplace", "Chef's Kitchen", "2nd Kitchen", "Sleeps 10", "Walk to Manito Park"],
-    availableDate: "Check Calendar",
-    airbnb: null,
-    featured: true
-  },
-  {
     id: 3,
     status: "available",
     type: "short-term",
@@ -115,25 +96,6 @@ const LISTINGS = [
     features: ["Lakefront", "Boat Lift", "Panoramic Views", "Starlink WiFi", "Tesla Charger", "Oversized Deck", "Sleeps 9"],
     availableDate: "Check Calendar",
     airbnb: "https://www.airbnb.com/rooms/1333447797391185127",
-    featured: true
-  },
-  {
-    id: 8,
-    status: "available",
-    type: "short-term",
-    title: "Modern Downtown Cottage — Minutes from Lake CDA",
-    address: "Coeur d'Alene, ID",
-    state: "ID",
-    price: 199,
-    priceLabel: "/night",
-    beds: 3,
-    baths: 2.5,
-    sqft: null,
-    image: "images/316-w-12th.jpg",
-    description: "⭐ 5.0 rating · 4 reviews. A newly remodeled, beautifully decorated freestanding townhome just 5 minutes from downtown Coeur d'Alene and walking distance to Lake CDA, the public beach, shops, and restaurants. Three spacious bedrooms, upstairs loft with sofa bed, full kitchen, and laundry. Sleeps 8.",
-    features: ["Walk to Lake CDA", "Walk to Downtown", "Full Kitchen", "Washer/Dryer", "Upstairs Loft", "Sleeps 8", "2.5 Baths"],
-    availableDate: "Check Calendar",
-    airbnb: null,
     featured: true
   },
   {
