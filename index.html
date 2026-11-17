@@ -45,8 +45,22 @@
     ]
   }
   </script>
+  <script>
+    (function () {
+      var now = new Date();
+      var stamp = now.getFullYear() * 10000 + (now.getMonth() + 1) * 100 + now.getDate();
+      var hide = stamp > 20261201;
+      try { if (localStorage.getItem('ppPromoDismissed') === 'move-in-2026') hide = true; } catch (e) {}
+      if (hide) document.documentElement.classList.add('promo-off');
+    })();
+  </script>
 </head>
 <body>
+<div class="promo-banner" role="region" aria-label="Move-in special">
+    <a href="listings.html">Move-in special: 2 weeks off your first month on select homes. Sign a qualifying lease by Nov 30 with a start date by Dec 1.</a>
+    <button type="button" aria-label="Dismiss move-in special">&times;</button>
+  </div>
+
 
   <!-- NAV -->
   <header class="site-header">

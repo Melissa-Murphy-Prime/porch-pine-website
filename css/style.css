@@ -157,6 +157,7 @@ p  { color: var(--text-mid); line-height: 1.7; }
 /* ============================================================
    PROMO BANNER
    ============================================================ */
+html.promo-off .promo-banner { display: none; }
 .promo-banner {
   background: var(--slate-dark);
   color: var(--white);

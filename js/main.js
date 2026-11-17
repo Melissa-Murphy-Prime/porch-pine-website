@@ -4,24 +4,14 @@
 
 // ---- MOVE-IN PROMO ----
 (function () {
-  const now = new Date();
-  const stamp = now.getFullYear() * 10000 + (now.getMonth() + 1) * 100 + now.getDate();
-  if (stamp > 20261201) return;
-  try {
-    if (localStorage.getItem('ppPromoDismissed') === 'move-in-2026') return;
-  } catch (err) {
-    /* private mode */
-  }
-  const banner = document.createElement('div');
-  banner.className = 'promo-banner';
-  banner.setAttribute('role', 'region');
-  banner.setAttribute('aria-label', 'Move-in special');
-  banner.innerHTML = '<a href="listings.html">Move-in special: 2 weeks off your first month on select homes. Sign a qualifying lease by Nov 30 with a start date by Dec 1.</a><button type="button" aria-label="Dismiss move-in special">&times;</button>';
-  banner.querySelector('button').addEventListener('click', () => {
+  const banner = document.querySelector('.promo-banner');
+  if (!banner) return;
+  const button = banner.querySelector('button');
+  if (!button) return;
+  button.addEventListener('click', () => {
     banner.remove();
     try { localStorage.setItem('ppPromoDismissed', 'move-in-2026'); } catch (err) { /* ignore */ }
   });
-  document.body.prepend(banner);
 })();
 
 // ---- MOBILE NAV ----
