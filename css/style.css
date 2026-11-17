@@ -135,12 +135,18 @@ p  { color: var(--text-mid); line-height: 1.7; }
   background: rgba(255,255,255,0.12);
   border-color: var(--white);
 }
-.btn-zillow {
+.btn-zillow,
+.btn-airbnb,
+.btn-hotpads,
+.btn-trulia {
   background: transparent;
   color: var(--slate-mid);
   border-color: var(--border-dark);
 }
-.btn-zillow:hover {
+.btn-zillow:hover,
+.btn-airbnb:hover,
+.btn-hotpads:hover,
+.btn-trulia:hover {
   background: var(--slate-mid);
   color: var(--white);
   border-color: var(--slate-mid);

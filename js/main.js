@@ -19,9 +19,10 @@ if (navToggle && navLinks) {
 function buildCard(listing) {
   const statusColors = { available: '#3D6B2C', pending: '#C49A5A', rented: '#999' };
   const statusLabels = { available: 'Available', pending: 'Application Pending', rented: 'Rented' };
+  const placeholderHtml = `<div class="property-card-image-placeholder"><span>&#127968;</span><p>Photo Coming Soon</p></div>`;
   const imageHtml = listing.image
-    ? `<img src="${listing.image}" alt="${listing.title}" class="property-card-image" />`
-    : `<div class="property-card-image-placeholder"><span>&#127968;</span><p>Photo Coming Soon</p></div>`;
+    ? `<img src="${listing.image}" alt="${listing.title}" class="property-card-image" onerror="this.onerror=null;this.outerHTML='<div class=\'property-card-image-placeholder\'><span>&#127968;</span><p>Photo Coming Soon</p></div>';" />`
+    : placeholderHtml;
 
   const featuresHtml = listing.features && listing.features.length
     ? `<div class="property-card-meta">${listing.features.slice(0,4).map(f => `<span>&#10003; ${f}</span>`).join('')}</div>`
@@ -46,7 +47,7 @@ function buildCard(listing) {
         <div class="property-card-location">&#128205; ${listing.address}</div>
         <div class="property-card-meta">
           <span>&#127968; ${listing.beds} Bed${listing.beds !== 1 ? 's' : ''}</span>
-          <span>&#128703; ${listing.baths} Bath${listing.baths !== 1 ? 's' : ''}</span>
+          ${listing.baths == null || listing.baths === '' ? `<span>&#128703; See listing</span>` : `<span>&#128703; ${listing.baths} Bath${listing.baths !== 1 ? 's' : ''}</span>`}
           ${listing.sqft ? `<span>&#9632; ${listing.sqft.toLocaleString()} sqft</span>` : ''}
         </div>
         ${featuresHtml}
@@ -56,7 +57,10 @@ function buildCard(listing) {
         </div>
         <div class="property-card-footer">
           <a href="contact.html?property=${listing.id}" class="btn btn-primary">Inquire</a>
+          ${listing.trulia ? `<a href="${listing.trulia}" target="_blank" rel="noopener" class="btn btn-trulia">Trulia</a>` : ''}
+          ${listing.hotpads ? `<a href="${listing.hotpads}" target="_blank" rel="noopener" class="btn btn-hotpads">HotPads</a>` : ''}
           ${listing.zillow ? `<a href="${listing.zillow}" target="_blank" rel="noopener" class="btn btn-zillow">Zillow</a>` : ''}
+          ${listing.airbnb ? `<a href="${listing.airbnb}" target="_blank" rel="noopener" class="btn btn-airbnb">Airbnb</a>` : ''}
         </div>
       </div>
     </div>
@@ -66,7 +70,11 @@ function buildCard(listing) {
 // ---- HOMEPAGE: FEATURED LISTINGS PREVIEW ----
 const featuredGrid = document.getElementById('featuredListings');
 if (featuredGrid && typeof LISTINGS !== 'undefined') {
-  const featured = LISTINGS.filter(l => l.featured && l.status === 'available').slice(0, 3);
+  const availableFeatured = LISTINGS.filter(l => l.featured && l.status === 'available');
+  const featured = [
+    ...availableFeatured.filter(l => l.type === 'long-term'),
+    ...availableFeatured.filter(l => l.type !== 'long-term')
+  ].slice(0, 3);
   if (featured.length) {
     featuredGrid.innerHTML = featured.map(buildCard).join('');
   } else {
